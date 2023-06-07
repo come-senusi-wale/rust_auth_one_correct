@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  postgres:
+    image: postgres:11-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: auth
+      POSTGRES_USER: auth
+      POSTGRES_DB: auth
+    ports:
+      - 5439:5432
+ 
