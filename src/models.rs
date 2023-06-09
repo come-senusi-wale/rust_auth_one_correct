@@ -51,3 +51,9 @@ pub struct Response {
     pub message: String,   
 }
 
+#[derive(Serialize, Deserialize)]
+pub struct RegResponse {
+    pub id: String, 
+    pub user_name: String  
+}
+
